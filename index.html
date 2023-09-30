@@ -1,0 +1,53 @@
+<html>
+    <head>
+
+<div id="webcam-container"></div>
+<div id="label-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script type="text/javascript"></script>
+ <link rel="stylesheet" href="face_recognition.css">
+    
+    </head>
+
+    <body>
+        
+        <div class="container">
+
+            <center>
+
+        <h1 id="heading">Face Recognition Web App</h1>
+
+        <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+        
+        <h3 id="father">Father</h3>
+
+        <h3  id="mother">Mother</h3>
+
+        <h3 id="brother">Brother</h3>
+
+        <h3 id="sister">Sister</h3>
+
+        <div class="col-md-4 col-sm-12 col-xs-12"> 
+            <label>Webcam View - </label> 
+            <div id="camera">
+        </div>">
+
+        <br>
+        <br>
+
+        <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button> 
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+
+      <div id="result">
+
+      </div>
+
+    </center>
+
+        </div>        
+    </body>
+</html>
